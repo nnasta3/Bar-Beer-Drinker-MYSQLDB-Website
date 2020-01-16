@@ -1,0 +1,62 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{ beerName }}</h1>
+  </div>
+</div>
+
+<br>
+<div class = "container">
+    <h2 class="text-center font-weight-light">Bars Where This Beer is a Top Seller</h2>
+      <p-table [value]="topSellers">
+          <ng-template pTemplate="header">
+          <tr>
+              <th>Bar</th>
+              <th>Number of Beers Ordered</th>
+          </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-item>
+          <tr>
+          <td>
+          <a routerLink="/bars/{{ item.bar }}">
+            {{ item.bar }}
+          </a>
+          </td>
+          <td>{{ item.bills }}</td>
+          </tr>
+          </ng-template>
+         </p-table>
+  </div>
+<!--this is a chart for the above table-->
+<!----<div class="container"> 
+  <br>
+  <div id = "bargraph"></div>
+</div>-->
+
+<div class="container"> 
+    <br>
+    <div id = "bargraph2"></div>
+</div>
+
+<br><br>
+
+<div class = "container">
+  <h2 class="text-center font-weight-light">Top Consumers of This Beer</h2>
+    <p-table [value]="bigConsumers">
+        <ng-template pTemplate="header">
+        <tr>
+            <th>Drinker</th>
+            <th>Number of Beers Consumed</th>
+        </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-item>
+        <tr>
+        <a routerLink="/Drinkers/{{ item.drinker }}">
+        <td>{{ item.drinker}}</td>
+        </a>
+        <td>{{ item.bills }}</td>
+        </tr>
+        </ng-template>
+       </p-table>
+</div>
+
+<br><br><br>

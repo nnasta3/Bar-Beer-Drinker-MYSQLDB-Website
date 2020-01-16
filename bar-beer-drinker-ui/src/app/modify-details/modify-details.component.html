@@ -1,0 +1,49 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Modify The Database</h1>
+      <p class="lead">Select a table below to modify it.</p>
+    </div>
+</div>
+<br><br>
+
+<div class = "container">
+  <p-table [value]="drinkers">
+      <ng-template pTemplate="header">
+      <tr>
+          <a routerLink="/Modify/Drinkers">
+          <th>Drinkers</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Beers">
+            <th>Beers</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Bars">
+            <th>Bars</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Bills">
+            <th>Bills</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Sells">
+            <th>Sells</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Frequents">
+            <th>Frequents</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/Likes">
+            <th>Likes</th>
+          </a>
+          <br>
+          <a routerLink="/Modify/BeersOrdered">
+            <th>BeersOrdered</th>
+          </a>
+      </tr>
+      </ng-template>
+     </p-table>
+</div>
+
+<br><br>

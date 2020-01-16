@@ -1,0 +1,66 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Modify The Beers Table</h1>
+  </div>
+</div>
+<br><br>
+
+
+<div class = "container">
+  <form method = "POST" action ="/api/modBeers">
+    <h2>Insert Into Beers</h2>
+    <br>
+    <Label for="beerName">Beer Name:</Label>
+    <input type="text" name = "beerName">
+    <br>
+    <Label for="manf">Manufacturer:</Label>
+    <input type="text" name = "manf">
+    <br>
+    <br>
+    <button type = "submit" class="btn btn-primary"> Submit</button>
+  </form>
+</div>
+<br>
+<br>
+
+<div class = "container">
+  <form method = "POST" action = "/api/modBeersUp">
+    <h2>Update Beers Current Values</h2>
+    <br>
+    <Label for="beerName">Beer Name:</Label>
+    <input type="text" name = "beerName">
+    <br>
+    <Label for="manf">Manufacturer:</Label>
+    <input type="text" name = "manf">
+    <br>
+    <br>
+    <h2>Update Beers New Values</h2>
+    <br>
+    <Label for="beerNameNew">Beer Name:</Label>
+    <input type="text" name = "beerNameNew">
+    <br>
+    <Label for="manfNew">Manufacturer:</Label>
+    <input type="text" name = "manfNew">
+    <br>
+    <br>
+    <button type = "submit" class="btn btn-primary"> Submit</button>
+  </form>
+</div>
+<br>
+<br>
+
+<div class = "container">
+  <form method = "POST" action ="/api/modBeersDel">
+    <h2>Delete A Beer</h2>
+    <br>
+    <Label for="beerName">Beer Name:</Label>
+    <input type="text" name = "beerName">
+    <br>
+    <Label for="manf">Manufacturer:</Label>
+    <input type="text" name = "manf">
+    <br>
+    <br>
+    <button type = "submit" class="btn btn-primary"> Submit</button>
+  </form>
+</div>
+<br>

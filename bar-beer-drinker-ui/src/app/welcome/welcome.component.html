@@ -1,0 +1,40 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to Bar Beer Drinker</h1>
+    <p class="lead">This website allows user to access and modify the Bar Beer Drinker database, as well as show interesting information.</p>
+    <p > Below is a list of all the bars in the database. Click on a bar to find out more about it.</p>
+  </div>
+</div>
+
+<div class = "container">
+    <p-table [value]="bars">
+        <ng-template pTemplate="header">
+        <tr>
+            <th>Bar Name</th>
+            <th>License</th>
+            <th>State</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Opens</th>
+            <th>Closes</th>
+        </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-bar>
+        <tr>
+        <td>
+        <a routerLink="/bars/{{ bar.name }}">
+        {{ bar.name }}
+        </a>
+        </td>
+        <td>{{ bar.license }}</td>
+        <td>{{ bar.state }}</td>
+        <td>{{ bar.phoneNumber }}</td>
+        <td>{{ bar.address }}</td>
+        <td>{{ bar.opens }}</td>
+        <td>{{ bar.closes }}</td>
+        </tr>
+        </ng-template>
+       </p-table>
+</div>
+
+<br><br>
